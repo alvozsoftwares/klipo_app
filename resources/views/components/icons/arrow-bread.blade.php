@@ -1,0 +1,1 @@
+<svg viewBox="0 0 24 44" preserveAspectRatio="none" aria-hidden="true" {{ $attributes->merge(['class' => 'fill-white/20 w-4 h-full']) }}><path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z"></path></svg>

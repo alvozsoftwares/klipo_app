@@ -19,11 +19,17 @@
 <body class="min-h-screen antialiased gradiente flex flex-col relative">
     <x-layouts.site.header />
     
-    <div class="flex-1">
-        {{ $slot }}
+    <div class="flex-1 overflow-hidden">
+        <div class="w-full h-full overflow-y-auto">
+            <div class="w-full h-full flex flex-col">
+                <div class="w-full flex-1">
+                    {{ $slot }}
+                </div>
+                <x-layouts.site.footer />
+            </div>
+        </div>
     </div>
     
-    <x-layouts.site.footer />
 
     <x-popups.cookies />
     
