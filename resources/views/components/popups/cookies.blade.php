@@ -2,6 +2,7 @@
     x-data="cookieConsent()"
     x-init="init()"
     x-show="show"
+    x-cloak
     class="fixed bottom-0 lg:bottom-6 w-full flex justify-center px-4"
     x-transition:leave="transition transform ease-in duration-300"
     x-transition:leave-start="translate-y-0"
