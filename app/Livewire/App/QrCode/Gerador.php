@@ -108,6 +108,16 @@ class Gerador extends Component
         $this->gradient_to_array = [$d, $e, $f];
     }
 
+    public function changeStyle($style)
+    {
+        $this->estilo_principal = $style;
+    }
+
+    public function changeStyleOlho($style)
+    {
+        $this->estilo_olhos = $style;
+    }
+
     public function gerarQrCode()
     {
         $this->validate();

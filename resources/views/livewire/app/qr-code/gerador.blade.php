@@ -1,7 +1,7 @@
 <div>
     <div class="w-full flex flex-col lg:flex-row gap-8">
         <div class="w-full flex-1 mb-10">
-            <section x-data="{ tab: 'basico', conteudo: 'link_unico' }" class="flex flex-wrap gap-8 items-start content-start">
+            <section x-data="{ tab: 'basico', conteudo: 'link_unico', estilo_principal: 'square', estilo_olhos: 'square' }" class="flex flex-wrap gap-8 items-start content-start">
                 <div class="w-full flex flex-wrap gap-4 items-start content-start">
                     <div class="w-full">
                         <p class="text-xl text-white font-bold text-center lg:text-left">Selecione o tipo de conteúdo</p>
@@ -339,6 +339,71 @@
                                             </flux:input.group>
                                             <flux:error name="margem" />
                                         </flux:field>
+                                    </div>
+                                </div>
+                                <div class="w-full col-span-2 gap-4 flex flex-wrap">
+                                    <div class="flex flex-col">
+                                        <div class="mb-1 font-bold">{{ __('Formato do corpo') }}</div>
+                                        <flux:button.group>
+                                            <flux:tooltip content="Quadrado">
+                                                <flux:button
+                                                    class="cursor-pointer"
+                                                    wire:click="changeStyle('square')"
+                                                    @click="estilo_principal = 'square'"
+                                                    ::class="{ '!bg-tertiary !text-white': (estilo_principal === 'square') }"
+                                                >
+                                                    <x-icons.square class="size-4 lg:size-5 fill-accent" />
+                                                    <span class="sr-only">{{ __('square') }}</span>
+                                                </flux:button>
+                                            </flux:tooltip>
+                                            <flux:tooltip content="Arredondado">
+                                                <flux:button
+                                                    class="cursor-pointer"
+                                                    wire:click="changeStyle('round')"
+                                                    @click="estilo_principal = 'round'"
+                                                    ::class="{ '!bg-tertiary !text-white': (estilo_principal === 'round') }"
+                                                >
+                                                    <x-icons.round class="size-4 lg:size-5 fill-accent" />
+                                                    <span class="sr-only">{{ __('round') }}</span>
+                                                </flux:button>
+                                            </flux:tooltip>
+                                            <flux:tooltip content="Círculo">
+                                                <flux:button
+                                                    class="cursor-pointer"
+                                                    wire:click="changeStyle('dot')"
+                                                    @click="estilo_principal = 'dot'"
+                                                    ::class="{ '!bg-tertiary !text-white': (estilo_principal === 'dot') }"
+                                                >
+                                                    <x-icons.dot class="size-4 lg:size-5 fill-accent" />
+                                                    <span class="sr-only">{{ __('dot') }}</span>
+                                                </flux:button>
+                                            </flux:tooltip>
+                                        </flux:button.group>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="mb-1 font-bold">{{ __('Formato do olho') }}</div>
+                                        <flux:button.group>
+                                            <flux:tooltip content="Quadrado">
+                                                <flux:button
+                                                    class="cursor-pointer"
+                                                    wire:click="changeStyleOlho('square')"
+                                                    @click="estilo_olhos = 'square'"
+                                                    ::class="{ '!bg-tertiary !text-white': (estilo_olhos === 'square') }"
+                                                >
+                                                    <x-icons.square class="size-4 lg:size-5 fill-accent" />
+                                                </flux:button>
+                                            </flux:tooltip>
+                                            <flux:tooltip content="Círculo">
+                                                <flux:button
+                                                    class="cursor-pointer"
+                                                    wire:click="changeStyleOlho('circle')"
+                                                    @click="estilo_olhos = 'circle'"
+                                                    ::class="{ '!bg-tertiary !text-white': (estilo_olhos === 'circle') }"
+                                                >
+                                                    <x-icons.dot class="size-4 lg:size-5 fill-accent" />
+                                                </flux:button>
+                                            </flux:tooltip>
+                                        </flux:button.group>
                                     </div>
                                 </div>
 
