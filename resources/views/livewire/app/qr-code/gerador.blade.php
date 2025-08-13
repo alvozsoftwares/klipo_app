@@ -18,7 +18,7 @@
                                 {{-- @click="tab = 'premium'" 
                                 :class="tab === 'premium' ? '!bg-accent' : 'bg-white'" --}}
                                 class="px-4 lg:px-7 py-2 lg:py-3 text-sm lg:text-base bg-white inline-flex items-center justify-center rounded-full font-bold text-gray-400 transition duration-200 ease-in-out gap-2">
-                                <x-icons.cadeado class="size-5 fill-gray-400" />
+                                <x-icons.cadeado class="size-5 fill-gray-200" />
                                 Premium
                             </button>
                         </div>
@@ -31,7 +31,7 @@
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'link_unico') }"
                                     >
                                         <x-icons.link class="size-4 lg:size-5 fill-accent" />
-                                        <span class="flex-1">{{ __('Link Unico') }}</span>
+                                        <span class="flex-1">{{ __('Link Único') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
                                         wire:click="changeType('texto')"
@@ -66,12 +66,29 @@
                                         <span class="flex-1">{{ __('Wi-fi') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
-                                        class="text-gray-400"
+                                        wire:click="changeType('pix')"
+                                        @click="conteudo = 'pix'"
+                                        ::class="{ '!bg-tertiary !text-white': (conteudo === 'pix') }"
+                                    >
+                                        <x-icons.pix class="size-4 lg:size-5 fill-accent" />
+                                        <span class="flex-1">{{ __('Pix') }}</span>
+                                    </x-buttons.tipo-conteudo>
+                                    <x-buttons.tipo-conteudo
+                                        class="text-gray-200 !bg-gray-400/80"
+                                        {{-- wire:click="changeType('email')" --}}
+                                        {{-- @click="conteudo = 'email'"
+                                        ::class="{ '!bg-tertiary !text-white': (conteudo === 'email') }" --}}
+                                    >
+                                        <x-icons.cadeado class="size-4 lg:size-5 fill-gray-200" />
+                                        <span class="flex-1">{{ __('E-mail') }}</span>
+                                    </x-buttons.tipo-conteudo>
+                                    <x-buttons.tipo-conteudo
+                                        class="text-gray-200 !bg-gray-400/80"
                                         {{-- wire:click="changeType('localizacao')" --}}
                                         {{-- @click="conteudo = 'localizacao'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'localizacao') }" --}}
                                     >
-                                        <x-icons.cadeado class="size-4 lg:size-5 fill-gray-400" />
+                                        <x-icons.cadeado class="size-4 lg:size-5 fill-gray-200" />
                                         <span class="flex-1">{{ __('Localização') }}</span>
                                     </x-buttons.tipo-conteudo>
                                 </div>
@@ -220,6 +237,48 @@
                                             })"
                                          />
                                     </div>
+                                </div>
+                            </div>
+
+                            <div x-show="conteudo === 'pix'" class="w-full grid lg:grid-cols-4 gap-4">
+                                <div class="flex flex-col">
+                                    <label for="pix_tipo_chave" class="mb-1 font-bold">{{ __('Tipo de chave') }}</label>
+                                    <flux:select wire:model.live="pix_tipo_chave" id="pix_tipo_chave">
+                                        <flux:select.option value="cpf">CPF</flux:select.option>
+                                        <flux:select.option value="cnpj">CNPJ</flux:select.option>
+                                        <flux:select.option value="email">E-mail</flux:select.option>
+                                        <flux:select.option value="celular">Celular</flux:select.option>
+                                        <flux:select.option value="aleatoria">Aleatória</flux:select.option>
+                                    </flux:select>
+                                </div>
+                                <div class="flex flex-col lg:col-span-3">
+                                    <label for="pix_chave" class="mb-1 font-bold">{{ __('Chave Pix') }}</label>
+                                    <flux:input 
+                                        wire:model="pix_chave" 
+                                        id="pix_chave"
+                                        placeholder="Digite a chave pix"
+                                        x-data="{ mask: null }"
+                                        x-init="mask = IMask($el, {
+                                            mask: [
+                                                { mask: '000.000.000-00' },
+                                                { mask: '+00 (00) 0000-0000' },
+                                                { mask: '+00 (00) 00000-0000' },
+                                                { mask: '00.000.000.0000/00' },
+                                                { mask: /^\S*@?\S*$/ }
+                                                ]
+                                            })"
+                                        />
+                                </div>
+                                <div class="flex flex-col lg:col-span-2">
+                                    <label for="pix_identificador" class="mb-1 font-bold">{{ __('Identificador') }} <span class="text-xs text-gray-500">{{ __('(opcional)') }}</span></label>
+                                    <flux:input placeholder="PGTOLOJA123" wire:model="pix_identificador" id="pix_identificador" />
+                                </div>
+                                <div class="flex flex-col lg:col-span-2">
+                                    <label for="pix_valor" class="mb-1 font-bold">{{ __('Valor') }} <span class="text-xs text-gray-500">{{ __('(opcional)') }}</span></label>
+                                    <flux:input.group>
+                                        <flux:input.group.prefix>R$</flux:input.group.prefix>
+                                        <flux:input placeholder="20,00" wire:model="pix_valor" id="pix_valor" type="number" step="0.01" />
+                                    </flux:input.group>
                                 </div>
                             </div>
 

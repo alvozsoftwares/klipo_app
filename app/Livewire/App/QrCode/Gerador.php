@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Response;
 use Intervention\Image\Drivers\Imagick\Driver;
 use Intervention\Image\ImageManager;
 use Livewire\Component;
+use Rayanetenorios\Pix\Payload;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class Gerador extends Component
@@ -59,6 +60,11 @@ class Gerador extends Component
     public $contato_cidade = null;
     public $contato_estado = null;
     public $contato_cep = null;
+    
+    public $pix_tipo_chave = 'cpf';
+    public $pix_chave = null;
+    public $pix_valor = null;
+    public $pix_identificador = null;
 
     public function mount()
     {
@@ -147,7 +153,8 @@ class Gerador extends Component
                 $conteudo = "WIFI:T:".$validated['wifi_encriptacao'].";S:".$ssid.";P:".$senha.";;";
             }
         } 
-        elseif ($this->tipo_conteudo == 'contato') {
+        elseif ($this->tipo_conteudo == 'contato') 
+        {
             $validated = $this->validate([
                 'contato_nome'      => 'required|string',
                 'contato_sobrenome' => 'nullable|string',
@@ -208,6 +215,49 @@ class Gerador extends Component
             }
 
             $conteudo .= "END:VCARD";
+        }
+        elseif ($this->tipo_conteudo == 'pix') 
+        {
+            $validated = $this->validate([
+                'pix_tipo_chave'    => 'required|string',
+                'pix_chave'         => 'required|string',
+                'pix_valor'         => 'nullable|numeric',
+                'pix_identificador' => 'nullable|string',
+            ]);
+
+            if($validated['pix_tipo_chave'] == 'email'){
+                $validated += $this->validate([
+                    'pix_chave' => 'email',
+                ]);
+            } elseif($validated['pix_tipo_chave'] == 'celular'){
+                $validated += $this->validate([
+                    'pix_chave' => 'numeric|min:12|max:13',
+                ]);
+            } elseif($validated['pix_tipo_chave'] == 'cpf'){
+                $validated += $this->validate([
+                    'pix_chave' => 'numeric|min:11|max:11',
+                ]);
+            } elseif($validated['pix_tipo_chave'] == 'cnpj'){
+                $validated += $this->validate([
+                    'pix_chave' => 'numeric|min:14|max:14',
+                ]);
+            } else {
+                $validated += $this->validate([
+                    'pix_chave' => 'string',
+                ]);
+            }
+
+            $pix = new Payload();
+            $pix->setPixKey($validated['pix_chave']);
+
+            if(!empty($validated['pix_valor'])) {
+                $pix->setAmount($validated['pix_valor']);
+            }
+            if(!empty($validated['pix_identificador'])) {
+                $pix->setTxid($validated['pix_identificador']);
+            }
+
+            $conteudo = $pix->getPayload();
         }
 
         $this->transformCorPrincipal();
