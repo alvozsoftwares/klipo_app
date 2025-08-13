@@ -358,6 +358,12 @@
                             </flux:button>
                         </flux:button.group>
                     </div>
+                    
+                    <div>
+                        <flux:button variant="filled" class="cursor-pointer !text-white !font-bold" type="button" wire:click="resetQrCode">
+                            Gerar novo QR code
+                        </flux:button>
+                    </div>
                 @endif
             </div>
         </div>

@@ -359,4 +359,10 @@ class Gerador extends Component
             'Content-Disposition' => 'attachment; filename="' . $fileName . '"',
         ]);
     }
+
+    public function resetQrCode()
+    {
+        $this->reset();
+        return;
+    }
 }
