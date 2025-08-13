@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-Bold.eot');
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Bold.woff2') format('woff2'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Bold.woff') format('woff'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Bold.ttf') format('truetype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Bold.svg#Brooklyn-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.eot');
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.woff2') format('woff2'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.woff') format('woff'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.ttf') format('truetype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.svg#Brooklyn-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brooklyn Normal';
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-Normal.eot');
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-Normal.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Normal.woff2') format('woff2'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Normal.woff') format('woff'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Normal.ttf') format('truetype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Normal.svg#Brooklyn-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.eot');
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.woff2') format('woff2'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.woff') format('woff'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.ttf') format('truetype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.svg#Brooklyn-HeavyItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-BoldItalic.eot');
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-BoldItalic.woff2') format('woff2'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-BoldItalic.woff') format('woff'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-BoldItalic.ttf') format('truetype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-BoldItalic.svg#Brooklyn-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-Heavy.eot');
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Heavy.woff2') format('woff2'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Heavy.woff') format('woff'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Heavy.ttf') format('truetype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Heavy.svg#Brooklyn-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brooklyn Normal';
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-Italic.eot');
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Italic.woff2') format('woff2'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Italic.woff') format('woff'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Italic.ttf') format('truetype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-Italic.svg#Brooklyn-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBold.eot');
+    src: url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBold.woff2') format('woff2'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBold.woff') format('woff'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBold.ttf') format('truetype'),
+        url('../../public/src/fonts/Brooklyn/Brooklyn-SemiBold.svg#Brooklyn-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () { return view('site.home'); })->name('home');
+Route::get('/planos-e-precos', function () { return view('site.home'); })->name('planos');
 Route::get('/contato', function () { return view('site.home'); })->name('contato');
 Route::get('/politica-de-privacidade', function () { return view('site.privacidade'); })->name('privacidade');
 Route::get('/termos-de-uso', function () { return view('site.termos'); })->name('termos');

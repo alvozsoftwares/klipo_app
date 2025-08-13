@@ -50,6 +50,9 @@
                     <x-links.nav-link-home :href="route('home')" :active="request()->routeIs('home')">
                         {{ __('Página Inicial') }}
                     </x-links.nav-link-home>
+                    <x-links.nav-link-home :href="route('planos')" :active="request()->routeIs('planos')">
+                        {{ __('Planos e preços') }}
+                    </x-links.nav-link-home>
                     <x-links.nav-link-home :href="route('contato')" :active="request()->routeIs('contato')">
                         {{ __('Contato') }}
                     </x-links.nav-link-home>

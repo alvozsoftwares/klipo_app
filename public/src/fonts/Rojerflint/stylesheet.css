@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('Rojerflint-Light.eot');
+    src: url('Rojerflint-Light.eot?#iefix') format('embedded-opentype'),
+        url('Rojerflint-Light.woff2') format('woff2'),
+        url('Rojerflint-Light.woff') format('woff'),
+        url('Rojerflint-Light.svg#Rojerflint-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('Rojerflint-Regular.eot');
+    src: url('Rojerflint-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Rojerflint-Regular.woff2') format('woff2'),
+        url('Rojerflint-Regular.woff') format('woff'),
+        url('Rojerflint-Regular.svg#Rojerflint-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('Rojerflint-LightItalic.eot');
+    src: url('Rojerflint-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rojerflint-LightItalic.woff2') format('woff2'),
+        url('Rojerflint-LightItalic.woff') format('woff'),
+        url('Rojerflint-LightItalic.svg#Rojerflint-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('Rojerflint-BoldItalic.eot');
+    src: url('Rojerflint-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rojerflint-BoldItalic.woff2') format('woff2'),
+        url('Rojerflint-BoldItalic.woff') format('woff'),
+        url('Rojerflint-BoldItalic.svg#Rojerflint-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('Rojerflint-Bold.eot');
+    src: url('Rojerflint-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Rojerflint-Bold.woff2') format('woff2'),
+        url('Rojerflint-Bold.woff') format('woff'),
+        url('Rojerflint-Bold.svg#Rojerflint-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('Rojerflint-Italic.eot');
+    src: url('Rojerflint-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Rojerflint-Italic.woff2') format('woff2'),
+        url('Rojerflint-Italic.woff') format('woff'),
+        url('Rojerflint-Italic.svg#Rojerflint-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

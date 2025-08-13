@@ -2,7 +2,9 @@
     <div class="container mx-auto px-6 max-w-6xl">
         <div class="flex flex-col justify-center items-center gap-4 pt-10">
             <div>
-                <x-logos.logo-vertical class="w-32" />
+                <a href="{{ route('home') }}">
+                    <x-logos.logo-vertical class="w-32" />
+                </a>
             </div>
             <div>
                 <ul>

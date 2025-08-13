@@ -1,0 +1,44 @@
+@import './brooklyn.css';
+@import './rojerflint.css';
+
+@font-face {
+    font-family: 'Quart Outline';
+    src: url('../../public/src/fonts/Quart/Quart-Outline.eot');
+    src: url('../../public/src/fonts/Quart/Quart-Outline.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Quart/Quart-Outline.woff2') format('woff2'),
+        url('../../public/src/fonts/Quart/Quart-Outline.woff') format('woff'),
+        url('../../public/src/fonts/Quart/Quart-Outline.ttf') format('truetype'),
+        url('../../public/src/fonts/Quart/Quart-Outline.svg#Quart-Outline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quart';
+    src: url('../../public/src/fonts/Quart/Quart-Regular.eot');
+    src: url('../../public/src/fonts/Quart/Quart-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Quart/Quart-Regular.woff2') format('woff2'),
+        url('../../public/src/fonts/Quart/Quart-Regular.woff') format('woff'),
+        url('../../public/src/fonts/Quart/Quart-Regular.ttf') format('truetype'),
+        url('../../public/src/fonts/Quart/Quart-Regular.svg#Quart-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gate';
+    src: url('../../public/src/fonts/Gate/Gate-Regular.woff2') format('woff2'),
+        url('../../public/src/fonts/Gate/Gate-Regular.woff') format('woff'),
+        url('../../public/src/fonts/Gate/Gate-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gate';
+    src: url('../../public/src/fonts/Gate/Gate-Italic.woff2') format('woff2'),
+        url('../../public/src/fonts/Gate/Gate-Italic.woff') format('woff'),
+        url('../../public/src/fonts/Gate/Gate-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}

@@ -1,6 +1,326 @@
 {
+  "public/src/fonts/Brooklyn/Brooklyn-Bold.eot": {
+    "file": "assets/Brooklyn-Bold-BlCFQ8im.eot",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Bold.eot"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Bold.svg": {
+    "file": "assets/Brooklyn-Bold-CYIJ7_0G.svg",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Bold.svg"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Bold.ttf": {
+    "file": "assets/Brooklyn-Bold-9Ntj4Mpi.ttf",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Bold.ttf"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Bold.woff": {
+    "file": "assets/Brooklyn-Bold-1Y8BkeQt.woff",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Bold.woff"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Bold.woff2": {
+    "file": "assets/Brooklyn-Bold-t6BJMRef.woff2",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Bold.woff2"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.eot": {
+    "file": "assets/Brooklyn-BoldItalic-C_kYgQJS.eot",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.eot"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.svg": {
+    "file": "assets/Brooklyn-BoldItalic-BHVNSni7.svg",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.svg"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.ttf": {
+    "file": "assets/Brooklyn-BoldItalic-Bw3ZMeo2.ttf",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.ttf"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.woff": {
+    "file": "assets/Brooklyn-BoldItalic-DTvwENxq.woff",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.woff"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.woff2": {
+    "file": "assets/Brooklyn-BoldItalic-DHlBfQce.woff2",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-BoldItalic.woff2"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Heavy.eot": {
+    "file": "assets/Brooklyn-Heavy-DZPaWDou.eot",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Heavy.eot"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Heavy.svg": {
+    "file": "assets/Brooklyn-Heavy-CbDMLsUW.svg",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Heavy.svg"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Heavy.ttf": {
+    "file": "assets/Brooklyn-Heavy-bnRo7QGO.ttf",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Heavy.ttf"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Heavy.woff": {
+    "file": "assets/Brooklyn-Heavy-Bpt6y3a1.woff",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Heavy.woff"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Heavy.woff2": {
+    "file": "assets/Brooklyn-Heavy-Ctc-wFX2.woff2",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Heavy.woff2"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.eot": {
+    "file": "assets/Brooklyn-HeavyItalic-DTK5L58E.eot",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.eot"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.svg": {
+    "file": "assets/Brooklyn-HeavyItalic-BeAcQYOT.svg",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.svg"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.ttf": {
+    "file": "assets/Brooklyn-HeavyItalic-BnPsnoBL.ttf",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.ttf"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.woff": {
+    "file": "assets/Brooklyn-HeavyItalic-BBrdtP7u.woff",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.woff"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.woff2": {
+    "file": "assets/Brooklyn-HeavyItalic-CBJXaBq5.woff2",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-HeavyItalic.woff2"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Italic.eot": {
+    "file": "assets/Brooklyn-Italic-zZ3ZojY4.eot",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Italic.eot"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Italic.svg": {
+    "file": "assets/Brooklyn-Italic-B6EvFcva.svg",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Italic.svg"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Italic.ttf": {
+    "file": "assets/Brooklyn-Italic-ZNDnJipp.ttf",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Italic.ttf"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Italic.woff": {
+    "file": "assets/Brooklyn-Italic-QH47p4IJ.woff",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Italic.woff"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Italic.woff2": {
+    "file": "assets/Brooklyn-Italic-rTungvJa.woff2",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Italic.woff2"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Normal.eot": {
+    "file": "assets/Brooklyn-Normal-BVRGl2Vp.eot",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Normal.eot"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Normal.svg": {
+    "file": "assets/Brooklyn-Normal-B2I5XayN.svg",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Normal.svg"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Normal.ttf": {
+    "file": "assets/Brooklyn-Normal-Q7lSens-.ttf",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Normal.ttf"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Normal.woff": {
+    "file": "assets/Brooklyn-Normal-jw1Aa4o-.woff",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Normal.woff"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-Normal.woff2": {
+    "file": "assets/Brooklyn-Normal-CiQ4U84F.woff2",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-Normal.woff2"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBold.eot": {
+    "file": "assets/Brooklyn-SemiBold-DWz3h9Ye.eot",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBold.eot"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBold.svg": {
+    "file": "assets/Brooklyn-SemiBold-CPsnDxnR.svg",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBold.svg"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBold.ttf": {
+    "file": "assets/Brooklyn-SemiBold-CHNE6Lqn.ttf",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBold.ttf"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBold.woff": {
+    "file": "assets/Brooklyn-SemiBold-KbHvQgIk.woff",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBold.woff"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBold.woff2": {
+    "file": "assets/Brooklyn-SemiBold-B0YNidS2.woff2",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBold.woff2"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.eot": {
+    "file": "assets/Brooklyn-SemiBoldItalic-BEzAUoeo.eot",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.eot"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.svg": {
+    "file": "assets/Brooklyn-SemiBoldItalic-BsOZh_kX.svg",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.svg"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.ttf": {
+    "file": "assets/Brooklyn-SemiBoldItalic-XfHpCMCs.ttf",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.ttf"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.woff": {
+    "file": "assets/Brooklyn-SemiBoldItalic-A4CSsMj-.woff",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.woff"
+  },
+  "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.woff2": {
+    "file": "assets/Brooklyn-SemiBoldItalic-C8TL43s-.woff2",
+    "src": "public/src/fonts/Brooklyn/Brooklyn-SemiBoldItalic.woff2"
+  },
+  "public/src/fonts/Gate/Gate-Italic.ttf": {
+    "file": "assets/Gate-Italic-NAm0cvZv.ttf",
+    "src": "public/src/fonts/Gate/Gate-Italic.ttf"
+  },
+  "public/src/fonts/Gate/Gate-Italic.woff": {
+    "file": "assets/Gate-Italic-CJPJe_JT.woff",
+    "src": "public/src/fonts/Gate/Gate-Italic.woff"
+  },
+  "public/src/fonts/Gate/Gate-Italic.woff2": {
+    "file": "assets/Gate-Italic-kOpY1-tO.woff2",
+    "src": "public/src/fonts/Gate/Gate-Italic.woff2"
+  },
+  "public/src/fonts/Gate/Gate-Regular.ttf": {
+    "file": "assets/Gate-Regular-BURbO1Wd.ttf",
+    "src": "public/src/fonts/Gate/Gate-Regular.ttf"
+  },
+  "public/src/fonts/Gate/Gate-Regular.woff": {
+    "file": "assets/Gate-Regular-xBI0_8TG.woff",
+    "src": "public/src/fonts/Gate/Gate-Regular.woff"
+  },
+  "public/src/fonts/Gate/Gate-Regular.woff2": {
+    "file": "assets/Gate-Regular-COPrYdF2.woff2",
+    "src": "public/src/fonts/Gate/Gate-Regular.woff2"
+  },
+  "public/src/fonts/Quart/Quart-Outline.eot": {
+    "file": "assets/Quart-Outline-Bquv63Ke.eot",
+    "src": "public/src/fonts/Quart/Quart-Outline.eot"
+  },
+  "public/src/fonts/Quart/Quart-Outline.svg": {
+    "file": "assets/Quart-Outline-cnsIoTJc.svg",
+    "src": "public/src/fonts/Quart/Quart-Outline.svg"
+  },
+  "public/src/fonts/Quart/Quart-Outline.ttf": {
+    "file": "assets/Quart-Outline-Ck-Bicu3.ttf",
+    "src": "public/src/fonts/Quart/Quart-Outline.ttf"
+  },
+  "public/src/fonts/Quart/Quart-Outline.woff": {
+    "file": "assets/Quart-Outline-CDexfppl.woff",
+    "src": "public/src/fonts/Quart/Quart-Outline.woff"
+  },
+  "public/src/fonts/Quart/Quart-Outline.woff2": {
+    "file": "assets/Quart-Outline-BzBp4m9l.woff2",
+    "src": "public/src/fonts/Quart/Quart-Outline.woff2"
+  },
+  "public/src/fonts/Quart/Quart-Regular.eot": {
+    "file": "assets/Quart-Regular-D1qUYAD4.eot",
+    "src": "public/src/fonts/Quart/Quart-Regular.eot"
+  },
+  "public/src/fonts/Quart/Quart-Regular.svg": {
+    "file": "assets/Quart-Regular-BpAHJ5lB.svg",
+    "src": "public/src/fonts/Quart/Quart-Regular.svg"
+  },
+  "public/src/fonts/Quart/Quart-Regular.ttf": {
+    "file": "assets/Quart-Regular-m83lA1Un.ttf",
+    "src": "public/src/fonts/Quart/Quart-Regular.ttf"
+  },
+  "public/src/fonts/Quart/Quart-Regular.woff": {
+    "file": "assets/Quart-Regular-Be9A-WUC.woff",
+    "src": "public/src/fonts/Quart/Quart-Regular.woff"
+  },
+  "public/src/fonts/Quart/Quart-Regular.woff2": {
+    "file": "assets/Quart-Regular-BuFZoLrE.woff2",
+    "src": "public/src/fonts/Quart/Quart-Regular.woff2"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Bold.eot": {
+    "file": "assets/Rojerflint-Bold-C8tORJV6.eot",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Bold.eot"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Bold.svg": {
+    "file": "assets/Rojerflint-Bold-C18r4-s1.svg",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Bold.svg"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Bold.woff": {
+    "file": "assets/Rojerflint-Bold-DdgmwY9N.woff",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Bold.woff"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Bold.woff2": {
+    "file": "assets/Rojerflint-Bold-27xtn6fg.woff2",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Bold.woff2"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-BoldItalic.eot": {
+    "file": "assets/Rojerflint-BoldItalic-9TZn-r0u.eot",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-BoldItalic.eot"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-BoldItalic.svg": {
+    "file": "assets/Rojerflint-BoldItalic-B0RWVZuy.svg",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-BoldItalic.svg"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-BoldItalic.woff": {
+    "file": "assets/Rojerflint-BoldItalic-BGzDay_f.woff",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-BoldItalic.woff"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-BoldItalic.woff2": {
+    "file": "assets/Rojerflint-BoldItalic-CYljahRG.woff2",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-BoldItalic.woff2"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Italic.eot": {
+    "file": "assets/Rojerflint-Italic-D8txLRuh.eot",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Italic.eot"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Italic.svg": {
+    "file": "assets/Rojerflint-Italic-Beji48Bk.svg",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Italic.svg"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Italic.woff": {
+    "file": "assets/Rojerflint-Italic-C559rwGY.woff",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Italic.woff"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Italic.woff2": {
+    "file": "assets/Rojerflint-Italic-pTIydgcX.woff2",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Italic.woff2"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Light.eot": {
+    "file": "assets/Rojerflint-Light-Dsj2176y.eot",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Light.eot"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Light.svg": {
+    "file": "assets/Rojerflint-Light-CMOHzhPG.svg",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Light.svg"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Light.woff": {
+    "file": "assets/Rojerflint-Light-DYnx_drS.woff",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Light.woff"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Light.woff2": {
+    "file": "assets/Rojerflint-Light-CZKeiksY.woff2",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Light.woff2"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-LightItalic.eot": {
+    "file": "assets/Rojerflint-LightItalic-B84PV1os.eot",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-LightItalic.eot"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-LightItalic.svg": {
+    "file": "assets/Rojerflint-LightItalic-BJ62iSIa.svg",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-LightItalic.svg"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-LightItalic.woff": {
+    "file": "assets/Rojerflint-LightItalic-BCglnnRM.woff",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-LightItalic.woff"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-LightItalic.woff2": {
+    "file": "assets/Rojerflint-LightItalic-Cd9DpPOq.woff2",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-LightItalic.woff2"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Regular.eot": {
+    "file": "assets/Rojerflint-Regular-DTLaciXA.eot",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Regular.eot"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Regular.svg": {
+    "file": "assets/Rojerflint-Regular-nWhemCaE.svg",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Regular.svg"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Regular.woff": {
+    "file": "assets/Rojerflint-Regular-CycHX665.woff",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Regular.woff"
+  },
+  "public/src/fonts/Rojerflint/Rojerflint-Regular.woff2": {
+    "file": "assets/Rojerflint-Regular-ayXvf_EW.woff2",
+    "src": "public/src/fonts/Rojerflint/Rojerflint-Regular.woff2"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-DffCI_yw.css",
+    "file": "assets/app-BDdpJgsP.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -8,7 +328,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-l0sNRNKZ.js",
+    "file": "assets/app-CkSDfXmA.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true

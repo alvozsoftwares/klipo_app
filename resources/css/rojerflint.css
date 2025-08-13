@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-Light.eot');
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Light.woff2') format('woff2'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Light.woff') format('woff'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Light.svg#Rojerflint-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-Regular.eot');
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Regular.woff2') format('woff2'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Regular.woff') format('woff'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Regular.svg#Rojerflint-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-LightItalic.eot');
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-LightItalic.woff2') format('woff2'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-LightItalic.woff') format('woff'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-LightItalic.svg#Rojerflint-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-BoldItalic.eot');
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-BoldItalic.woff2') format('woff2'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-BoldItalic.woff') format('woff'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-BoldItalic.svg#Rojerflint-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-Bold.eot');
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Bold.woff2') format('woff2'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Bold.woff') format('woff'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Bold.svg#Rojerflint-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rojerflint';
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-Italic.eot');
+    src: url('../../public/src/fonts/Rojerflint/Rojerflint-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Italic.woff2') format('woff2'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Italic.woff') format('woff'),
+        url('../../public/src/fonts/Rojerflint/Rojerflint-Italic.svg#Rojerflint-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
