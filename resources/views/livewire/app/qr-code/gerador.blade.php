@@ -267,8 +267,8 @@
             </section>
         </div>
         <div class="w-full lg:w-80 relative">
-            <div class="flex flex-col sticky top-10">
-                <div class="w-full border rounded-lg border-gray-300 overflow-hidden mb-4">
+            <div class="flex flex-col sticky top-10 gap-4 items-center">
+                <div class="w-full border rounded-lg border-gray-300 overflow-hidden ">
                     @if ($qrcode != null)
                         <img src="{!! $qrcode !!}" class="w-full">
                     @else
@@ -279,10 +279,26 @@
                 </div>
     
                 <div class="w-full">
-                    <flux:button variant="primary" color="green" class="w-full cursor-pointer" type="button" wire:click="gerarQrCode">
+                    <flux:button variant="primary" class="w-full cursor-pointer !py-6 !text-lg !text-black !font-bold" type="button" wire:click="gerarQrCode">
                         Gerar QR code
                     </flux:button>
                 </div>
+
+                @if($qrcode)    
+                    <div>
+                        <flux:button.group class="gap-[1px]">
+                            <flux:button icon="arrow-down-tray" variant="primary" class="cursor-pointer !text-black !font-bold" type="button" wire:click="downloadPng">
+                                PNG
+                            </flux:button>
+                            <flux:button icon="arrow-down-tray" variant="primary" class="cursor-pointer !text-black !font-bold" type="button" wire:click="downloadJpg">
+                                JPG
+                            </flux:button>
+                            <flux:button icon="arrow-down-tray" variant="primary" class="cursor-pointer !text-black !font-bold" type="button" wire:click="downloadWebp">
+                                Webp
+                            </flux:button>
+                        </flux:button.group>
+                    </div>
+                @endif
             </div>
         </div>
     </div>

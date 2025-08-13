@@ -2,6 +2,7 @@
 
 namespace App\Livewire\App\QrCode;
 
+use Illuminate\Support\Facades\Response;
 use Intervention\Image\Drivers\Imagick\Driver;
 use Intervention\Image\ImageManager;
 use Livewire\Component;
@@ -273,5 +274,50 @@ class Gerador extends Component
     public function render()
     {
         return view('livewire.app.qr-code.gerador');
+    }
+
+    public function downloadPng()
+    {
+        $imageData = base64_decode(str_replace('data:image/png;base64,', '', $this->qrcode));
+        $fileName = 'qrcode_' . time() . '.png';
+
+        return Response::streamDownload(function () use ($imageData) {
+            echo $imageData;
+        }, $fileName, [
+            'Content-Type' => 'image/png',
+            'Content-Disposition' => 'attachment; filename="' . $fileName . '"',
+        ]);
+    }
+
+    public function downloadJpg()
+    {
+        $manager = new ImageManager(new Driver());
+        $image = $manager->read(base64_decode(str_replace('data:image/png;base64,', '', $this->qrcode)))
+                        ->toJpeg();
+
+        $fileName = 'qrcode_' . time() . '.jpg';
+
+        return Response::streamDownload(function () use ($image) {
+            echo $image;
+        }, $fileName, [
+            'Content-Type' => 'image/jpeg',
+            'Content-Disposition' => 'attachment; filename="' . $fileName . '"',
+        ]);
+    }
+
+    public function downloadWebp()
+    {
+        $manager = new ImageManager(new Driver());
+        $image = $manager->read(base64_decode(str_replace('data:image/png;base64,', '', $this->qrcode)))
+                        ->toWebp();
+
+        $fileName = 'qrcode_' . time() . '.webp';
+
+        return Response::streamDownload(function () use ($image) {
+            echo $image;
+        }, $fileName, [
+            'Content-Type' => 'image/webp',
+            'Content-Disposition' => 'attachment; filename="' . $fileName . '"',
+        ]);
     }
 }
