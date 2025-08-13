@@ -7,63 +7,63 @@
                         <p class="text-xl text-white font-bold text-center lg:text-left">Selecione o tipo de conteúdo</p>
                     </div>
                     <div class="w-full flex flex-col items-start justify-start">
-                        <div class="bg-light1 p-4 rounded-t-3xl flex gap-2 w-full lg:w-auto flex justify-center items-center">
+                        <div class="bg-light1 px-4 pt-4 pb-1 rounded-t-3xl flex gap-2 w-full lg:w-auto flex justify-center items-center">
                             <button type="button" 
                                 @click="tab = 'basico'" 
                                 :class="tab === 'basico' ? '!bg-accent' : 'bg-white'"
-                                class="px-7 py-3 bg-white inline-flex items-center justify-center rounded-full font-bold text-black cursor-pointer transition duration-200 ease-in-out hover:scale-95 gap-2">
+                                class="px-4 lg:px-7 py-2 lg:py-3 text-sm lg:text-base bg-white inline-flex items-center justify-center rounded-full font-bold text-black cursor-pointer transition duration-200 ease-in-out hover:scale-95 gap-2">
                                 Básico
                             </button>
                             <button type="button" 
                                 {{-- @click="tab = 'premium'" 
                                 :class="tab === 'premium' ? '!bg-accent' : 'bg-white'" --}}
-                                class="px-7 py-3 bg-white inline-flex items-center justify-center rounded-full font-bold text-gray-400 transition duration-200 ease-in-out gap-2">
+                                class="px-4 lg:px-7 py-2 lg:py-3 text-sm lg:text-base bg-white inline-flex items-center justify-center rounded-full font-bold text-gray-400 transition duration-200 ease-in-out gap-2">
                                 <x-icons.cadeado class="size-5 fill-gray-400" />
                                 Premium
                             </button>
                         </div>
                         <div class="bg-light1 p-4 rounded-b-3xl lg:rounded-r-3xl w-full -mt-1">
                             <div x-show="tab === 'basico'" class="w-full">
-                                <div class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                                <div class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4">
                                     <x-buttons.tipo-conteudo 
                                         wire:click="changeType('link_unico')"
                                         @click="conteudo = 'link_unico'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'link_unico') }"
                                     >
-                                        <x-icons.link class="size-5 fill-accent" />
-                                        <span>{{ __('Link Unico') }}</span>
+                                        <x-icons.link class="size-4 lg:size-5 fill-accent" />
+                                        <span class="flex-1">{{ __('Link Unico') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
                                         wire:click="changeType('texto')"
                                         @click="conteudo = 'texto'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'texto') }"
                                     >
-                                        <x-icons.texto class="size-5 stroke-accent" />
-                                        <span>{{ __('Texto') }}</span>
+                                        <x-icons.texto class="size-4 lg:size-5 stroke-accent" />
+                                        <span class="flex-1">{{ __('Texto') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
                                         wire:click="changeType('contato')"
                                         @click="conteudo = 'contato'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'contato') }"
                                     >
-                                        <x-icons.contato class="size-5 fill-accent" />
-                                        <span>{{ __('Contato') }}</span>
+                                        <x-icons.contato class="size-4 lg:size-5 fill-accent" />
+                                        <span class="flex-1">{{ __('Contato') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
                                         wire:click="changeType('whatsapp')"
                                         @click="conteudo = 'whatsapp'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'whatsapp') }"
                                     >
-                                        <x-icons.whatsapp class="size-5 fill-accent" />
-                                        <span>{{ __('WhatsApp') }}</span>
+                                        <x-icons.whatsapp class="size-4 lg:size-5 fill-accent" />
+                                        <span class="flex-1">{{ __('WhatsApp') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
                                         wire:click="changeType('wifi')"
                                         @click="conteudo = 'wifi'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'wifi') }"
                                     >
-                                        <x-icons.wifi class="size-5 fill-accent" />
-                                        <span>{{ __('Wi-fi') }}</span>
+                                        <x-icons.wifi class="size-4 lg:size-5 fill-accent" />
+                                        <span class="flex-1">{{ __('Wi-fi') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
                                         class="text-gray-400"
@@ -71,8 +71,8 @@
                                         {{-- @click="conteudo = 'localizacao'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'localizacao') }" --}}
                                     >
-                                        <x-icons.cadeado class="size-5 fill-gray-400" />
-                                        <span>{{ __('Localização') }}</span>
+                                        <x-icons.cadeado class="size-4 lg:size-5 fill-gray-400" />
+                                        <span class="flex-1">{{ __('Localização') }}</span>
                                     </x-buttons.tipo-conteudo>
                                 </div>
                             </div>
