@@ -220,31 +220,20 @@ class Gerador extends Component
         {
             $validated = $this->validate([
                 'pix_tipo_chave'    => 'required|string',
-                'pix_chave'         => 'required|string',
+                'pix_chave'         => 'required',
                 'pix_valor'         => 'nullable|numeric',
                 'pix_identificador' => 'nullable|string',
             ]);
 
-            if($validated['pix_tipo_chave'] == 'email'){
-                $validated += $this->validate([
-                    'pix_chave' => 'email',
-                ]);
-            } elseif($validated['pix_tipo_chave'] == 'celular'){
-                $validated += $this->validate([
-                    'pix_chave' => 'numeric|min:12|max:13',
-                ]);
-            } elseif($validated['pix_tipo_chave'] == 'cpf'){
-                $validated += $this->validate([
-                    'pix_chave' => 'numeric|min:11|max:11',
-                ]);
-            } elseif($validated['pix_tipo_chave'] == 'cnpj'){
-                $validated += $this->validate([
-                    'pix_chave' => 'numeric|min:14|max:14',
-                ]);
-            } else {
-                $validated += $this->validate([
-                    'pix_chave' => 'string',
-                ]);
+            switch($validated['pix_tipo_chave']) {
+                case 'cpf':
+                case 'cnpj':
+                case 'celular':
+                    $validated['pix_chave'] = preg_replace('/[^\d]/', '', $validated['pix_chave']);
+                    break;
+                default:
+                    $validated['pix_chave'] = $validated['pix_chave'];
+                    break;
             }
 
             $pix = new Payload();

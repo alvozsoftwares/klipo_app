@@ -268,6 +268,7 @@
                                                 ]
                                             })"
                                         />
+                                    <flux:error name="pix_chave" />
                                 </div>
                                 <div class="flex flex-col lg:col-span-2">
                                     <label for="pix_identificador" class="mb-1 font-bold">{{ __('Identificador') }} <span class="text-xs text-gray-500">{{ __('(opcional)') }}</span></label>
