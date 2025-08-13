@@ -28,6 +28,8 @@
     <meta name="robots" content="index, follow">
     <meta property="og:locale" content="pt_BR">
 
+    <meta name="google-adsense-account" content="ca-pub-5245256872718049">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @if(isset($head))
