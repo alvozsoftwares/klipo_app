@@ -5,6 +5,7 @@ namespace App\Livewire\App\QrCode;
 use Illuminate\Support\Facades\Response;
 use Intervention\Image\Drivers\Imagick\Driver;
 use Intervention\Image\ImageManager;
+use Livewire\Attributes\Validate;
 use Livewire\Component;
 use Rayanetenorios\Pix\Payload;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
@@ -31,8 +32,12 @@ class Gerador extends Component
     public $gradient_from_array = [255, 255, 255];
     public $gradient_to_array = [115, 115, 115];
 
+    #[Validate('required|integer|min:1|max:10')] 
     public $margem = 1;
+
+    #[Validate('required|integer|min:10|max:2000')] 
     public $tamanho = 500;
+    
     public $estilo_principal = 'square';
     public $estilo_olhos = 'square';
 
@@ -105,6 +110,8 @@ class Gerador extends Component
 
     public function gerarQrCode()
     {
+        $this->validate();
+
         $conteudo = '';
 
         if($this->tipo_conteudo == 'link_unico') 

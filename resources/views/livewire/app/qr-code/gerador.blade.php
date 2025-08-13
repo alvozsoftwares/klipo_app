@@ -319,6 +319,28 @@
                                         <label for="cor_principal" class="text-text-black font-mono cursor-pointer">{{ $cor_principal }}</label>
                                     </div>
                                 </div>
+                                <div class="w-full col-span-2 grid grid-cols-2 gap-4 lg:flex">
+                                    <div class="flex flex-col lg:w-[150px]">
+                                        <label class="font-bold mb-1">{{ __('Tamanho') }}</label>
+                                        <flux:field>
+                                            <flux:input.group>
+                                                <flux:input wire:model="tamanho" type="number" max="2000" />
+                                                <flux:input.group.suffix>px</flux:input.group.suffix>
+                                            </flux:input.group>
+                                            <flux:error name="tamanho" />
+                                        </flux:field>
+                                    </div>
+                                    <div class="flex flex-col lg:w-[150px]">
+                                        <label class="font-bold mb-1">{{ __('Margem') }}</label>
+                                        <flux:field>
+                                            <flux:input.group>
+                                                <flux:input wire:model="margem" type="number" max="10" />
+                                                <flux:input.group.suffix>(x10) px</flux:input.group.suffix>
+                                            </flux:input.group>
+                                            <flux:error name="margem" />
+                                        </flux:field>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
