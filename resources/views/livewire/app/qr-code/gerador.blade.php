@@ -30,6 +30,7 @@
                                         @click="conteudo = 'link_unico'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'link_unico') }"
                                     >
+                                        <x-icons.link class="size-5 fill-accent" />
                                         <span>{{ __('Link Unico') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
@@ -37,6 +38,7 @@
                                         @click="conteudo = 'texto'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'texto') }"
                                     >
+                                        <x-icons.texto class="size-5 stroke-accent" />
                                         <span>{{ __('Texto') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
@@ -44,6 +46,7 @@
                                         @click="conteudo = 'contato'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'contato') }"
                                     >
+                                        <x-icons.contato class="size-5 fill-accent" />
                                         <span>{{ __('Contato') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
@@ -51,6 +54,7 @@
                                         @click="conteudo = 'whatsapp'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'whatsapp') }"
                                     >
+                                        <x-icons.whatsapp class="size-5 fill-accent" />
                                         <span>{{ __('WhatsApp') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
@@ -58,6 +62,7 @@
                                         @click="conteudo = 'wifi'"
                                         ::class="{ '!bg-tertiary !text-white': (conteudo === 'wifi') }"
                                     >
+                                        <x-icons.wifi class="size-5 fill-accent" />
                                         <span>{{ __('Wi-fi') }}</span>
                                     </x-buttons.tipo-conteudo>
                                     <x-buttons.tipo-conteudo
