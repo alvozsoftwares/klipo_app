@@ -426,7 +426,7 @@
                 </div>
     
                 <div class="w-full">
-                    <flux:button variant="primary" class="w-full cursor-pointer !py-6 !text-lg !text-black !font-bold" type="button" wire:click="gerarQrCode">
+                    <flux:button variant="primary" id="gerar_qr_code" class="w-full cursor-pointer !py-6 !text-lg !text-black !font-bold" type="button" wire:click="gerarQrCode">
                         Gerar QR code
                     </flux:button>
                 </div>
