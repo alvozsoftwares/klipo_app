@@ -15,6 +15,7 @@
         <button 
             type="button" 
             class="px-4 py-3 rounded-md text-black font-bold bg-accent cursor-pointer"
+            onclick="consentGrantedAdStorage()"
             @click="accept()"
         >
             Concordo
@@ -23,16 +24,39 @@
 </div>
 
 <script>
-function cookieConsent() {
-    return {
-        show: false,
-        init() {
-            this.show = !localStorage.getItem('cookie_consent');
-        },
-        accept() {
-            localStorage.setItem('cookie_consent', 'true');
-            this.show = false;
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+    });
+</script>
+
+<script>
+    function cookieConsent() {
+        return {
+            show: false,
+            init() {
+                this.show = !localStorage.getItem('cookie_consent');
+            },
+            accept() {
+                localStorage.setItem('cookie_consent', 'true');
+                this.show = false;
+            }
         }
     }
-}
+</script>
+
+<script>
+    function consentGrantedAdStorage() {
+        gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'analytics_storage': 'granted'
+        });
+    }
 </script>
